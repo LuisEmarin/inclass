@@ -80,7 +80,7 @@ class Drone(db.Model):
         self.user_token = user_token
     
     def set_id(self):
-        return(secrets.token_urlsafe)
+        return(secrets.token_urlsafe())
 
     # creating our marshaller to pull/create k,v pairs out of Drone attributes
 class DroneSchema(ma.Schema):
